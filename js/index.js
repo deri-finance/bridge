@@ -395,26 +395,26 @@ $(function () {
                         $('#approves').attr("disabled", false);
                         return;
                     }
-                    // if(from_chainId){
-                    //     if (ethereum.networkVersion != from_chainId) {
-                    //         let network = from_chainId
-                    //         let text;
-                    //         if (network == '1') {
-                    //             text = 'Ethereum';
-                    //         }
-                    //         if (network == '56') {
-                    //             text = 'BSC'
-                    //         }
-                    //         if (network == '128') {
-                    //             text = 'HECO'
-                    //         }
-                    //         let woor = `Please connect to ${text}`
-                    //         $('.woor').text(woor)
-                    //         $('#approves').attr("disabled", true);
-                    //         $('.balance').text('--')
-                    //         return;
-                    //     }
-                    // }
+                    if(from_chainId){
+                        if (ethereum.networkVersion != from_chainId) {
+                            let network = from_chainId
+                            let text;
+                            if (network == '1') {
+                                text = 'Ethereum';
+                            }
+                            if (network == '56') {
+                                text = 'BSC'
+                            }
+                            if (network == '128') {
+                                text = 'HECO'
+                            }
+                            let woor = `Please connect to ${text}`
+                            $('.woor').text(woor)
+                            $('#approves').attr("disabled", true);
+                            $('.balance').text('--')
+                            return;
+                        }
+                    }
                     
                 })
             } else {
