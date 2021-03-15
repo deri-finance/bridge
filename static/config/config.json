@@ -1,0 +1,69 @@
+{
+    "oracleUrl": "https://oracle.deri.finance/price/",
+    "bscProviderUrl":"https://data-seed-prebsc-2-s1.binance.org:8545/",
+    "databaseAddress": "0xd8137F05c1F432A80525053c473d0e286c4F46f0",
+    "bscurl":[
+        "https://data-seed-prebsc-1-s1.binance.org:8545/",
+        "https://data-seed-prebsc-2-s1.binance.org:8545/",
+        "https://data-seed-prebsc-1-s2.binance.org:8545/",
+        "https://data-seed-prebsc-2-s2.binance.org:8545/",
+        "https://data-seed-prebsc-1-s3.binance.org:8545/",
+        "https://data-seed-prebsc-2-s3.binance.org:8545/"
+    ],
+    "deriAddress":"0x3C125824a889B46f039ab7449b70AF5b8466F3cf",
+    "deriDataBaseAbi":[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[{"internalType":"address","name":"newController","type":"address"}],"name":"addController","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"controllers","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"oldController","type":"address"}],"name":"delController","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"components":[{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"fromChainId","type":"uint256"},{"internalType":"address","name":"fromWormhole","type":"address"},{"internalType":"uint256","name":"toChainId","type":"uint256"},{"internalType":"address","name":"toWormhole","type":"address"},{"internalType":"uint256","name":"nonce","type":"uint256"},{"internalType":"uint256","name":"timestamp","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"internalType":"struct Database.Params1[]","name":"values","type":"tuple[]"}],"name":"setSignature","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"signature","outputs":[{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"fromChainId","type":"uint256"},{"internalType":"address","name":"fromWormhole","type":"address"},{"internalType":"uint256","name":"toChainId","type":"uint256"},{"internalType":"address","name":"toWormhole","type":"address"},{"internalType":"uint256","name":"nonce","type":"uint256"},{"internalType":"uint256","name":"timestamp","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"},{"internalType":"bool","name":"valid","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address[]","name":"values","type":"address[]"}],"name":"unsetSignature","outputs":[],"stateMutability":"nonpayable","type":"function"}],
+    "ropstenProviderUrl": "https://ropsten.infura.io/v3/194f1b2b258e45ad9e50d5e30f2ec8bb", 
+    "addresses":[
+        [
+            {
+            
+                "Deri": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "Wormhole": "0x6874640cC849153Cb3402D193C33c416972159Ce",
+                "bTokenSymbol":"DERI",
+                "chanId":"1"
+            }
+        ],
+        [
+            {
+            
+                "Deri": "0xe60eaf5A997DFAe83739e035b005A33AfdCc6df5",
+                "Wormhole": "0x15a5969060228031266c64274a54e02Fbd924AbF",
+                "bTokenSymbol":"DERI",
+                "chanId":"56"
+            }
+        ],
+        [
+            {
+            
+                "Deri": "0x2bdA3e331Cf735D9420e41567ab843441980C4B8",
+                "Wormhole": "0x134A04497e9a0b1F8850fEaf87eD18ec348dDa46",
+                "bTokenSymbol":"DERI",
+                "chanId":"128"
+            }
+        ]
+        
+         
+    ],
+    
+    "abifiles": {
+        "Wormhole": "Wormhole.abi",
+        "Deri": "Deri.abi"
+    },
+
+    "methods": {
+        "symbol": "symbol",
+        "decimals": "decimals",
+        "totalSupply": "totalSupply",
+        "balanceOf": "balanceOf",
+        "allowance": "allowance",
+        "approve": "approve",
+        "getParameters": "getParameters",
+        "getPosition": "getPosition(address)",
+        "getStateValues": "getStateValues",
+        "depositMargin": "depositMargin(uint256,uint256,uint256,uint8,bytes32,bytes32)",
+        "withdrawMargin": "withdrawMargin(uint256,uint256,uint256,uint8,bytes32,bytes32)",
+        "addLiquidity": "addLiquidity(uint256,uint256,uint256,uint8,bytes32,bytes32)",
+        "removeLiquidity": "removeLiquidity(uint256,uint256,uint256,uint8,bytes32,bytes32)",
+        "tradeWithMargin": "tradeWithMargin(int256,uint256,uint256,uint256,uint8,bytes32,bytes32)"
+    }
+}
