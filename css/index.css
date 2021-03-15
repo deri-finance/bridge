@@ -80,6 +80,41 @@
   width: 110px;
   height: 100%;
 }
+.bridge .nav ul {
+  margin-bottom: 0;
+  position: absolute;
+  right: 250px;
+}
+.bridge .nav ul li {
+  float: left;
+  list-style: none;
+  margin-left: 30px;
+  color: #747474;
+}
+.bridge .nav ul li .bar {
+  position: absolute;
+  top: 35px;
+  left: 272px;
+  width: 63px;
+  height: 4px;
+  background: linear-gradient(90deg, #09E4A2 0%, #00A9FF 100%);
+  border-radius: 3px;
+  margin: 12px auto;
+}
+.bridge .nav ul .ref:hover .dropdown-menu {
+  display: block;
+}
+.bridge .nav ul .dropdown-menu {
+  background-color: #353c40;
+  margin-left: 327px;
+}
+.bridge .nav ul .dropdown-menu li {
+  float: none;
+  margin-top: 10px;
+}
+.bridge .nav ul .dropdown-menu li a {
+  color: #747474;
+}
 .bridge .nav .connectw {
   margin-right: 40px;
 }
@@ -89,6 +124,10 @@
   background: linear-gradient(90deg, #09D3AF 0%, #09B8C2 18%, #0965FF 100%);
   border-radius: 41px;
   border: 0;
+  color: #fff;
+}
+.bridge .nav .connectw #adderssbtn {
+  display: none;
   color: #fff;
 }
 .bridge .container-fluid {

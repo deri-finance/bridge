@@ -73,7 +73,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: #141924;
-
+        
         .logo {
             height: 32px;
             margin-left: 40px;
@@ -83,7 +83,41 @@
                 height: 100%;
             }
         }
-
+        ul{
+            margin-bottom: 0;
+            position: absolute;
+            right: 250px;
+            li{
+                float: left;
+                list-style: none;
+                margin-left: 30px;
+                color: #747474;
+                .bar{
+                    position: absolute;
+                    top: 35px;
+                    left: 272px;
+                    width: 63px;
+                    height: 4px;
+                    background: linear-gradient(90deg, #09E4A2 0%, #00A9FF 100%);
+                    border-radius: 3px;
+                    margin: 12px auto;
+                }
+            }
+            .ref:hover .dropdown-menu{
+                display: block;
+            }
+            .dropdown-menu{
+                background-color: rgb(53, 60, 64);
+                margin-left: 327px;
+                li{
+                    float: none;
+                    margin-top: 10px;
+                    a{
+                        color: #747474;
+                    }
+                }
+            }
+        }
         .connectw {
             margin-right: 40px;
             .connect {
@@ -92,6 +126,10 @@
                 background: linear-gradient(90deg, #09D3AF 0%, #09B8C2 18%, #0965FF 100%);
                 border-radius: 41px;
                 border: 0;
+                color: #fff;
+            }
+            #adderssbtn{
+                display: none;
                 color: #fff;
             }
         }

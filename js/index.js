@@ -208,6 +208,7 @@ $(function () {
                         account.slice(account.length - 4, account.length);
                     $('#adderss').text(account);
                     $('.connect').hide();
+                    $('#adderssbtn').show();
                     valid = contract.valid;
                     getWalletBalance();
                     isapproves();

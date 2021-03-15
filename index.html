@@ -11,35 +11,6 @@
 </head>
 
 <body>
-    <div class="select_network">
-        <div class="close" id='network_close'>
-            <img src="./img/colse.png" alt="">
-        </div>
-        <div class="network_box">
-            <div class="title">Select Network</div>
-            <div class="hr"></div>
-            <div class="scroll">
-                <div class="chain">
-                    <span class="chain-left">
-                        <img src="./img/bsc.png">
-                        <span>BSC</span>
-                    </span>
-                </div>
-                <div class="chain">
-                    <span class="chain-left">
-                        <img src="./img/heco.png">
-                        <span>Heco</span>
-                    </span>
-                </div>
-                <div class="chain">
-                    <span class="chain-left">
-                        <img src="./img/eth.png">
-                        <span>Ethereum</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="bridge">
         <div class="nav">
@@ -48,13 +19,62 @@
                     <img src="./img/logo2.png" />
                 </a>
             </div>
+            <ul>
+                <li>
+                    <a href="https://deri.finance" style="color: #747474 !important;">Home</a>
+                </li>
+                <li>
+                    <a href="https://exchange.deri.finance/#/liquidity" style="color: #747474 !important;">Mining</a>
+                </li>
+                <li>
+                    <a href="https://exchange.deri.finance" style="color: #747474 !important;">Exchange</a>
+                </li>
+                <li style="color: #fff;">
+                    Bridge
+                    <div class="bar"></div>
+                </li>
+                <li class="ref">
+                    References
+                    <ul class="dropdown-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-540">
+                            <a
+                                href="https://github.com/deri-finance/whitepaper/blob/master/deri_whitepaper.pdf">Whitepaper</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-540">
+                            <a
+                                href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Deri-v1.0.pdf">Code
+                                Audit</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
+                            <a href="https://deri.finance/faq.html">FAQ</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
+                            <a href="https://deri.finance/guide.html">Guide</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
+                            <a href="https://github.com/deri-finance/">Github</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
+                            <a href="https://deri.finance/setallowance.html">Tools</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://deri.finance/team.html" style="color: #747474 !important; ">Team</a>
+                </li>
+                
+            </ul>
             <div class="connectw" style='text-align: right;'>
                 <button class="connect">
                     <span class="spinner spinner-border spinner-border-sm" role="status" aria-hidden="true"
                         style="display: none"></span>
-                    CONNECT WALLET
+                    Connect to Wallet
                 </button>
-                <span id='adderss'></span>
+                <button class="connect" id='adderssbtn'>
+                    <span id='adderss'></span>
+                </button>
+                
                 <br>
                 <span class="woor" style="color: red;"></span>
             </div>
