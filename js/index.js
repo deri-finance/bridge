@@ -264,6 +264,8 @@ $(function () {
                             $('#approves').attr("disabled", true);
                             $('.woor').text(woor)
                         } else {
+                            $('#claim').attr("disabled", false);
+                            $('#approves').attr("disabled", false);
                             $('.woor').text('')
                         }
                         contract.initialize(0, type).then((res) => {
@@ -308,7 +310,6 @@ $(function () {
                         return;
                     }
 
-                   
                     let lstoid = sessionStorage.getItem('toid')
                     if(lstoid){
                         to_chainId = lstoid;
@@ -390,28 +391,30 @@ $(function () {
                             getWalletBalance();
                             isapproves();
                         })
+                        $('#claim').attr("disabled", false);
+                        $('#approves').attr("disabled", false);
                         return;
                     }
-                    if(from_chainId){
-                        if (ethereum.networkVersion != from_chainId) {
-                            let network = from_chainId
-                            let text;
-                            if (network == '1') {
-                                text = 'Ethereum';
-                            }
-                            if (network == '56') {
-                                text = 'BSC'
-                            }
-                            if (network == '128') {
-                                text = 'HECO'
-                            }
-                            let woor = `Please connect to ${text}`
-                            $('.woor').text(woor)
-                            $('#approves').attr("disabled", true);
-                            $('.balance').text('--')
-                            return;
-                        }
-                    }
+                    // if(from_chainId){
+                    //     if (ethereum.networkVersion != from_chainId) {
+                    //         let network = from_chainId
+                    //         let text;
+                    //         if (network == '1') {
+                    //             text = 'Ethereum';
+                    //         }
+                    //         if (network == '56') {
+                    //             text = 'BSC'
+                    //         }
+                    //         if (network == '128') {
+                    //             text = 'HECO'
+                    //         }
+                    //         let woor = `Please connect to ${text}`
+                    //         $('.woor').text(woor)
+                    //         $('#approves').attr("disabled", true);
+                    //         $('.balance').text('--')
+                    //         return;
+                    //     }
+                    // }
                     
                 })
             } else {
