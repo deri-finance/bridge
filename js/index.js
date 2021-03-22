@@ -209,6 +209,25 @@ $(function () {
                     $('#adderss').text(account);
                     $('.connect').hide();
                     $('#adderssbtn').show();
+                    let walletid = ethereum.networkVersion;
+                    if(walletid == 1){
+                        $('.netlogo').css(
+                            "background-image",'url(../img/eth.png)'
+                        );
+                        $('.nettext').text('ETH');
+                    }
+                    if(walletid == 56){
+                        $('.netlogo').css(
+                            "background-image",'url(../img/bsc.png)'
+                        );
+                        $('.nettext').text('BSC');
+                    }
+                    if(walletid == 128){
+                        $('.netlogo').css(
+                            "background-image",'url(../img/heco.png) 100%'
+                        );
+                        $('.nettext').text('HECO');
+                    }
                     valid = contract.valid;
                     getWalletBalance();
                     isapproves();
