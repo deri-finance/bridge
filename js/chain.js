@@ -103,7 +103,7 @@ class Chain {
             this.web3 = new Web3(ethereum);
             this.ethereum = window.ethereum;
             this.account = (await ethereum.request({method: 'eth_requestAccounts'}))[0];
-            // this.account ='0x3e6AdD57874C592d082B5B05171f818604531c6B'
+            
             return {success: true, account: this.account};
         } else {
             return {success: false, error: 'Cannot connect wallet'};
