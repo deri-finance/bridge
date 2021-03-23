@@ -233,6 +233,7 @@ $(function () {
                     isapproves();
                     $('.woor').text('')
                     if (valid) {
+                        clearInterval(timer1)
                         if (contract.fromChainId == '1') {
                             $('.from_eth').show();
                             $('.from_heco').hide();
@@ -296,6 +297,7 @@ $(function () {
                                 $('.sending').hide();
                                 $('.approve').hide();
                                 $('.send').hide();
+                                
                                 $('.amounted').text(contract.amount)
                             }
                         })
@@ -325,11 +327,13 @@ $(function () {
                         $('.one').show();
                         $('.two').show();
                         $('.three').show();
+                        $('.approve').hide();
                         $('.info_tonetwork').text(to_network);
                         $('.info_fromnetwork').text(from_etwork);
+                        $('.tochain eth').hide();
+                        $('.to_select_network').hide();
                         return;
                     }
-
                     let lstoid = sessionStorage.getItem('toid')
                     if(lstoid){
                         to_chainId = lstoid;
@@ -472,6 +476,7 @@ $(function () {
     }
     function openselecttonetwork(){
         if($('.tkQzQQm').css("display") == 'none'){
+            
             $('.thAfEGY').hide();
             $('.tkQzQQm').show();
             $('.hAfEGY').show();
