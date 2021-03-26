@@ -73,17 +73,16 @@
   background-color: #141924;
 }
 .bridge .nav .logo {
-  height: 32px;
+  height: 50px;
   margin-left: 40px;
 }
 .bridge .nav .logo img {
-  width: 110px;
   height: 100%;
 }
 .bridge .nav ul {
   margin-bottom: 0;
   position: absolute;
-  right: 270px;
+  left: 123px;
 }
 .bridge .nav ul li {
   float: left;
@@ -106,7 +105,7 @@
 }
 .bridge .nav ul .dropdown-menu {
   background-color: #353c40;
-  margin-left: 327px;
+  margin-left: 300px;
 }
 .bridge .nav ul .dropdown-menu li {
   float: none;
