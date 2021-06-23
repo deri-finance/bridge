@@ -22,16 +22,16 @@
     "static/js/7.48a20ee8.chunk.js": "/static/js/7.48a20ee8.chunk.js",
     "static/js/7.48a20ee8.chunk.js.map": "/static/js/7.48a20ee8.chunk.js.map",
     "main.css": "/static/css/main.26e5397a.chunk.css",
-    "main.js": "/static/js/main.190add21.chunk.js",
-    "main.js.map": "/static/js/main.190add21.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.95c701e4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.95c701e4.js.map",
+    "main.js": "/static/js/main.8d529adb.chunk.js",
+    "main.js.map": "/static/js/main.8d529adb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2e89b16c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2e89b16c.js.map",
     "static/css/10.a747e6f3.chunk.css": "/static/css/10.a747e6f3.chunk.css",
     "static/js/10.df5a6065.chunk.js": "/static/js/10.df5a6065.chunk.js",
     "static/js/10.df5a6065.chunk.js.map": "/static/js/10.df5a6065.chunk.js.map",
     "static/css/11.12a222ca.chunk.css": "/static/css/11.12a222ca.chunk.css",
-    "static/js/11.d5cf7275.chunk.js": "/static/js/11.d5cf7275.chunk.js",
-    "static/js/11.d5cf7275.chunk.js.map": "/static/js/11.d5cf7275.chunk.js.map",
+    "static/js/11.d95dca04.chunk.js": "/static/js/11.d95dca04.chunk.js",
+    "static/js/11.d95dca04.chunk.js.map": "/static/js/11.d95dca04.chunk.js.map",
     "static/css/12.7fd98bbe.chunk.css": "/static/css/12.7fd98bbe.chunk.css",
     "static/js/12.a8dbe060.chunk.js": "/static/js/12.a8dbe060.chunk.js",
     "static/js/12.a8dbe060.chunk.js.map": "/static/js/12.a8dbe060.chunk.js.map",
@@ -145,10 +145,10 @@
     "static/media/menu.less": "/static/media/wechat.e3793154.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.95c701e4.js",
+    "static/js/runtime-main.2e89b16c.js",
     "static/css/10.a747e6f3.chunk.css",
     "static/js/10.df5a6065.chunk.js",
     "static/css/main.26e5397a.chunk.css",
-    "static/js/main.190add21.chunk.js"
+    "static/js/main.8d529adb.chunk.js"
   ]
 }
